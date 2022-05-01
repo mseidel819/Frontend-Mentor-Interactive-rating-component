@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import RatingPage from "./components/rating/rating.component";
 import Thanks from "./components/thanks/thanks.component";
