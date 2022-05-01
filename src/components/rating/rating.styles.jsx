@@ -4,7 +4,7 @@ export const RatingContainer = styled.div`
   background: linear-gradient(24deg, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
   justify-content: left;
   border-radius: 30px;
-  width: 400px;
+  width: 330px;
   padding: 20px;
 
   .star {
@@ -23,14 +23,15 @@ export const RatingContainer = styled.div`
 export const Title = styled.h2`
   color: white;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 12px;
 `;
 
 export const Para = styled.p`
   color: hsl(217, 12%, 63%);
   margin-bottom: 32px;
-  line-height: 1.3;
+  line-height: 1.5;
+  font-size: 14px;
 `;
 
 export const NumbersContainer = styled.div`
@@ -43,8 +44,8 @@ export const NumbersContainer = styled.div`
     color: hsl(217, 12%, 63%);
     font-size: 18px;
     border-radius: 100000px;
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     margin-bottom: 24px;
     cursor: pointer;
   }

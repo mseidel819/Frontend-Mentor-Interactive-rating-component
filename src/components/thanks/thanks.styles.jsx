@@ -6,35 +6,35 @@ export const ThanksContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
-  width: 400px;
+  width: 330px;
   padding: 20px;
 
-  .img-container{
+ 
+    .img-container {
+      margin: 20px auto;
+    }
 
-      margin:20px auto;
-  }
+    .rating-container {
+      color: hsl(25, 97%, 53%);
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 100px;
+      padding: 8px 20px;
+      margin-bottom: 34px;
+    }
 
-  .rating-container{
-color:hsl(25, 97%, 53%);
-background-color: hsl(213, 19%, 18%);
-border-radius: 100px;
-padding: 8px 20px;
-margin-bottom: 40px;
-
-  }
-  
-
-  h2{
+    h2 {
       color: white;
       font-weight: 700;
       font-size: 24px;
       margin-bottom: 15px;
-  }
+    }
 
-  .thanks-text{
+    .thanks-text {
       color: hsl(217, 12%, 63%);
       line-height: 1.5;
       text-align: center;
-  }
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
   }
 `;
