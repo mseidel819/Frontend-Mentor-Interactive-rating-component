@@ -7,7 +7,7 @@ import {
   Submit,
 } from "./rating.styles";
 
-const RatingPage = ({ ratingsHandler, rating }) => {
+const RatingPage = ({ submitHandler, ratingsHandler, rating }) => {
   const rateArr = [1, 2, 3, 4, 5];
 
   return (
@@ -37,7 +37,7 @@ const RatingPage = ({ ratingsHandler, rating }) => {
           );
         })}
       </NumbersContainer>
-      <Submit>Submit</Submit>
+      <Submit onClick={submitHandler}>Submit</Submit>
     </RatingContainer>
   );
 };

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import RatingPage from "./components/rating/rating.component";
+import Thanks from "./components/thanks/thanks.component";
 
 import "./App.css";
 
@@ -8,7 +9,9 @@ function App() {
   const [rating, setRating] = useState("");
   const [submit, setSubmit] = useState(false);
 
-  const submitHandler = () => {};
+  const submitHandler = () => {
+    setSubmit(true);
+  };
 
   const ratingsHandler = (rate) => {
     setRating(rate);
@@ -16,7 +19,15 @@ function App() {
 
   return (
     <div className="App">
-      <RatingPage ratingsHandler={ratingsHandler} rating={rating} />
+      {submit ? (
+        <Thanks rating={rating} />
+      ) : (
+        <RatingPage
+          submitHandler={submitHandler}
+          ratingsHandler={ratingsHandler}
+          rating={rating}
+        />
+      )}
     </div>
   );
 }

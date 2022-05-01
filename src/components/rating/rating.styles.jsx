@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RatingContainer = styled.div`
   background: linear-gradient(24deg, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
   justify-content: left;
-  border-radius: 10px;
+  border-radius: 30px;
   width: 400px;
   padding: 20px;
 
@@ -30,6 +30,7 @@ export const Title = styled.h2`
 export const Para = styled.p`
   color: hsl(217, 12%, 63%);
   margin-bottom: 32px;
+  line-height: 1.3;
 `;
 
 export const NumbersContainer = styled.div`
@@ -66,6 +67,7 @@ export const Submit = styled.button`
   width: 100%;
   height: 45px;
   border-radius: 10000px;
+  margin-bottom: 20px;
 
   text-transform: uppercase;
   font-size: 14px;
