@@ -16,7 +16,7 @@ const RatingPage = ({ submitHandler, ratingsHandler, rating }) => {
         <Star />
       </div>
       <Title>How did we do?</Title>
-      <Para role="contentinfo">
+      <Para>
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </Para>
