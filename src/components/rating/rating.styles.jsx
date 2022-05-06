@@ -20,7 +20,7 @@ export const RatingContainer = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   color: white;
   font-weight: 700;
   font-size: 28px;
