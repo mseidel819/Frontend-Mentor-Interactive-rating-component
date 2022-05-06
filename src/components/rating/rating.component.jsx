@@ -15,12 +15,12 @@ const RatingPage = ({ submitHandler, ratingsHandler, rating }) => {
       <div className="star">
         <Star />
       </div>
-      <Title role="content title">How did we do?</Title>
-      <Para role="feedback">
+      <Title role="heading">How did we do?</Title>
+      <Para role="contentinfo">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </Para>
-      <NumbersContainer role="number ratings">
+      <NumbersContainer role="form">
         {rateArr.map((rate, i) => {
           return (
             <button
@@ -37,7 +37,7 @@ const RatingPage = ({ submitHandler, ratingsHandler, rating }) => {
           );
         })}
       </NumbersContainer>
-      <Submit role="submit" onClick={submitHandler}>
+      <Submit role="button" onClick={submitHandler}>
         Submit
       </Submit>
     </RatingContainer>
